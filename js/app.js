@@ -115,8 +115,8 @@ function addToWallet() {
       params: {
         'type': 'ERC20',
         'options': {
-          'address': '0x9F7c63044cB6B48DdE3e06C4e8489557fe51E930',
-          'symbol': 'MTK',
+          'address': '0xc107BE0D881f2C1c3A79d39cE08852Aab91e385E',
+          'symbol': 'PLX',
           'decimals': '18'
         },
       },
@@ -141,7 +141,7 @@ function addToWallet() {
 //***************** some beauty jewelry  *****************/
 
 // Set the date we're counting down to
-var countDownDate = new Date("July 30, 2022 15:37:25").getTime();
+var countDownDate = new Date("Aug 5, 2022 07:37:25").getTime();
 
 // Update the count down every 1 second
 var x = setInterval(function () {
