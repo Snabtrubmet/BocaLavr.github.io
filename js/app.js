@@ -148,6 +148,10 @@ const accounts = await ethereum.request({method: 'eth_requestAccounts'});
     TokenSymbol.style.color = 'rgb(143 167 255)'
    console.log(symboloftoken);
  }
+
+document.getElementById("add").innerHTML = sttaddr
+    add.style.color = 'rgb(143 167 255)'
+
 //***************** some beauty jewelry  *****************/
 
 // Set the date we're counting down to
