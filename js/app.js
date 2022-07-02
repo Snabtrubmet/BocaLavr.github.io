@@ -122,7 +122,7 @@ getAccount();
 async function getAccount (){
 const accounts = await ethereum.request({method: 'eth_requestAccounts'});
     account = accounts[0];
-    showAccount.innerHTML = account; 
+    showAccount.innerHTML = {account.substring(0, 6)}....{account.substring(account.length - 5)} ; 
     showAccount.style.color = 'rgb(143 167 255)'
 
 //***************** New Function name  *****************/
