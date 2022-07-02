@@ -127,7 +127,7 @@ const accounts = await ethereum.request({method: 'eth_requestAccounts'});
 
 //***************** New Function name  *****************/
  
-    const name = await sttcontract.methods.symbol().call();
+    const name = await sttcontract.methods.name().call();
     TokenName.innerHTML = name ;
     TokenName.style.color = 'rgb(143 167 255)'
     console.log(name)
