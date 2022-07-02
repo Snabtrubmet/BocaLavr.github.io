@@ -124,8 +124,7 @@ const accounts = await web3.request({method: 'eth_requestAccounts'});
     account = accounts[0];
     showAccount.innerHTML = account; 
     showAccount.style.color = 'rgb(143 167 255)'
- 
-} 
+
 //***************** New Function name  *****************/
  
     const name = await sttcontract.methods.symbol().call();
