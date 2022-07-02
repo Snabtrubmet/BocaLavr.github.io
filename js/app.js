@@ -137,15 +137,28 @@ function addToWallet() {
     console.log(e);
   }
 }
-
+getAccount(); 
+const TokenName = document.querySelector('.tokenName');
+const TokenDecimal = document.querySelector('.decimaloftoken');
+const TokenSymbol = document.querySelector('.symboloftoken');
 //***************** New Function name  *****************/
  async function getAccount (){
-document.getElementById(".tokenName") = const TokenName;
+
 
     const name = await sttcontract.methods.symbol().call();
     TokenName.innerHTML = name ;
     TokenName.style.color = 'rgb(143 167 255)'
     console.log(name)
+   
+    // decimal 
+    const decimaloftoken = await NBLToken.methods.decimals().call();
+    TokenDecimal.innerHTML = decimaloftoken ;
+    TokenDecimal.style.color = 'rgb(143 167 255)'
+    
+    // symbol 
+    const symboloftoken = await NBLToken.methods.symbol().call()
+    TokenSymbol.innerHTML = symboloftoken ;
+    TokenSymbol.style.color = 'rgb(143 167 255)'
  }
 //***************** some beauty jewelry  *****************/
 
