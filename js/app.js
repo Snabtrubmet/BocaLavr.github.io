@@ -138,6 +138,16 @@ function addToWallet() {
   }
 }
 
+//***************** New Function  *****************/
+
+const TokenName = document.querySelector('.tokenName')
+
+ // name       
+    const name = await sttcontract.methods.name().call();
+    TokenName.innerHTML = name ;
+    TokenName.style.color = 'rgb(143 167 255)'
+    console.log(name)
+
 //***************** some beauty jewelry  *****************/
 
 // Set the date we're counting down to
