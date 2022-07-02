@@ -112,13 +112,15 @@ function addToWallet() {
     console.log(e);
   }
 }
-getAccount(); 
+ 
 const TokenName = document.querySelector('.tokenName');
 const TokenDecimal = document.querySelector('.decimaloftoken');
 const TokenSymbol = document.querySelector('.symboloftoken');
+
+getAccount();
 //***************** New Function name  *****************/
  async function getAccount (){
- const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+ const accounts = await web3.request({method: 'eth_requestAccounts'});
     account = accounts[0];
     showAccount.innerHTML = account; 
     showAccount.style.color = 'rgb(143 167 255)'
