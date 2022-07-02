@@ -120,7 +120,7 @@ const TokenSymbol = document.querySelector('.symboloftoken');
 getAccount();
 
 async function getAccount (){
-const accounts = await web3.request({method: 'eth_requestAccounts'});
+const accounts = await ethereum.request({method: 'eth_requestAccounts'});
     account = accounts[0];
     showAccount.innerHTML = account; 
     showAccount.style.color = 'rgb(143 167 255)'
