@@ -118,8 +118,7 @@ const TokenName = document.querySelector('.tokenName');
 const TokenDecimal = document.querySelector('.decimaloftoken');
 const TokenSymbol = document.querySelector('.symboloftoken');
 
-document.getElementById("addr").innerHTML = sttaddr
-   addr.style.color = 'rgb(143 167 255)'
+
 
 getAccount();
 
