@@ -1,10 +1,9 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
 	<meta charset="utf-8">
-	<title>TEST Token</title>
+	<title>Plexus Token</title>
 	<meta name="description" content="Next Generation Infrastruture for Tradaing,Liquifying NFTs,Metaverse ">
 	<meta name="author" content="">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,7 +15,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai&amp;family=Paytone+One&amp;display=swap"
 		rel="stylesheet">
-
+	
+	<script src="js/jquery-3.5.1.min.js"></script>
 </head>
 
 <body>
@@ -25,7 +25,7 @@
 	</div>
 	<header class="scrolled">
 		<div class="container">
-			<div class="row"><a class="logo">Test Token </a><a href="#" class="menutoggle">
+			<div class="row"><a class="logo">Plexus Token </a><a href="#" class="menutoggle">
 					<div class="bar"></div>
 				</a>
 				<ul class="menu">
@@ -43,7 +43,7 @@
 							href="https://rinkeby.etherscan.io/address/0x9F7c63044cB6B48DdE3e06C4e8489557fe51E930" target="_blank"
 							class="rocket-btn  rocket-btn-animated-icon rocket-btn-accent"><span
 								class="rocket-btn-icon-wrap"><i class="fa fa-globe" aria-hidden="true"></i></span> <span
-								class="rocket-btn-text-wrap">Bscscan</span></a></li>
+								class="rocket-btn-text-wrap">Rinkeby</span></a></li>
 				</ul>
 			</div>
 		</div>
@@ -54,18 +54,18 @@
 				<div class="hero-sm hidden-xs">
 					<div class="col-sm-5 col-md-6 text-section">
 						<div class="typed-strings" style="display: none">
-							<p>GameFi!</p>
-							<p>NFTs!</p>
-							<p>Metaverse!</p>
+							<p>Blockchain WEB studio!</p>
+							<p>DEV Smart Contracts!</p>
+							<p>DEX!</p>
 						</div>
-						<h1 class="hero-header">TEST TOKEN<br><span class="typed"></span></h1>
-						<p class="hero-text">Get on board the first on-boarding community NFT project.TEST Token helps
+						<h1 class="hero-header">Plexus TOKEN<br><span class="typed"></span></h1>
+						<p class="hero-text">Get on board the first on-boarding community NFT project.Plexus Token helps
 							you to launch your own community-driven NFT universe backed with social tools, media
-							services, and distribution - underpinned by the native $MTK token. </p>
+							services, and distribution - underpinned by the native Plexus token. </p>
 						<div class="button-block"><a href="#presale"
 								class="rocket-btn rocket-btn-animated-icon rocket-btn-fixed-width"><span
 									class="rocket-btn-icon-wrap"><i class="fa fa-rocket" aria-hidden="true"></i></span>
-								<span class="rocket-btn-text-wrap">Claim MTK</span></a></div>
+								<span class="rocket-btn-text-wrap">Claim Plexus</span></a></div>
 					</div>
 					<div class="col-sm-7 col-md-6 rocket-section">
 						<div id="bg-wrap">
@@ -460,11 +460,11 @@
 				</div>
 				<div class="hero-xs visible-xs-block">
 					<div class="col-xs-12 text-xs-center text-xs-section">
-						<h1 class="hero-header">Welcome to the NFT Universe Built on the Binance Smartchain!<br>
+						<h1 class="hero-header">Welcome to the NFT Universe Built on the Rinkeby!<br>
 							<span></span>
 						</h1>
 						<p class="hero-text">Launch your own community-driven NFT universe baked with social tools,
-							media services, and distribution - underpinned by the native $MTK token.</p><a
+							media services, and distribution - underpinned by the native $PLX token.</p><a
 							href="#presale" class="rocket-btn">Claim Token</a>
 					</div>
 					<div class="col-xs-12 rocket-xs-section"><img class="responsive-img" src="img/rez.png" alt="rocket">
@@ -478,12 +478,17 @@
 		<section class="dark-section pricing-section animated-section animated" id="presale">
 			<div class="container">
 				<div class="row">
-					<div class="section-header animated fadeIn" data-anim-queue="1" data-anim-type="fadeIn"
+							
+						
+						<div class="section-header animated fadeIn" data-anim-queue="1" data-anim-type="fadeIn"
 						style="opacity: 0;">
 						<h3 class="section-title">Presale</h3>
+						
 						<p class="section-subtitle"></p>
 						<hr>
+							<h2>Presale contract : <p id="addr"> Shows Only test</p></h2>
 					</div>
+					
 				</div>
 				<div class="row">
 					<div class="col-sm-3 col-md-3">
@@ -492,8 +497,12 @@
 					<div class="col-sm-6 col-md-6">
 						<div class="pricing pricing-active animated fadeInUp" data-anim-queue="4"
 							data-anim-type="fadeInUp" style="opacity: 0;">
-							<p>Pre-Sale Ends at July 30, 2022</p>
-							<p>$MTK Token will be Listed on Pancakeswap. Listing Price 1 MTK = 5 USD</p>
+							<p>Pre-Sale Ends at Aug 05, 2022</p>
+							<p>$PLX Token will be Listed on Pancakeswap. Listing Price 1 PLX = 5 USD</p>
+								  <h3>User account: <span class="showAccount"></span></h3> 
+								<h3>Name : <span class ="tokenName"></span></h3>
+								<h3>Symbol : <span class ="symboloftoken"></span></h3>
+								<h3> Decimal : <span class="decimaloftoken"></span></h3>
 							<div class="pricing-content">
 								<h2 style="color: #FFFFFF; font-size: 32px;" id="demo"></h2>
 								<ul class="collection">
@@ -512,7 +521,7 @@
 							<div class="plan-signup-btn">
 								<input
 									style="width: 90%; text-align: center; border-radius: 99px; margin-bottom: 20px; padding: 12px;"
-									id="buyinput" class="" placeholder="0.01" value="0.05"><a
+									id="buyinput" class="" placeholder="0.001" value="0.001"><a
 									href="javascript:buystt();"
 									class="rocket-btn rocket-btn-fixed-width rocket-btn-animated-icon"><span
 										class="rocket-btn-icon-wrap"><i class="fa fa-shopping-cart"
@@ -537,7 +546,7 @@
 					<div class="section-header animated fadeIn" data-anim-queue="1" data-anim-type="fadeIn"
 						style="opacity: 0;">
 						<h3 class="section-title">Our Roadmap</h3>
-						<p class="section-subtitle">Join TEST Token Future Plans.</p>
+						<p class="section-subtitle">Join Plexus Token Future Plans.</p>
 						<hr>
 					</div>
 				</div>
@@ -573,7 +582,7 @@
 									</svg></div>
 							</div>
 							<div class="timeline-content left animated fadeInUp" data-anim-queue="2"
-								data-anim-type="fadeInUp" style="opacity: 0;"><span>March, 2022</span> MTK Token v1.0
+								data-anim-type="fadeInUp" style="opacity: 0;"><span>March, 2022</span> PLX Token v1.0
 								release</div>
 						</div>
 						<div class="timeline-block">
@@ -600,7 +609,7 @@
 							</div>
 							<div class="timeline-content right animated fadeInUp" data-anim-queue="3"
 								data-anim-type="fadeInUp" style="opacity: 0;"><span>May, 2022</span> Website development
-								for the TEST Token Airdrop and Presale</div>
+								for the Plexus Token Airdrop and Presale</div>
 						</div>
 						<div class="timeline-block">
 							<div class="timeline-planet-wrap">
@@ -666,8 +675,8 @@
 							</div>
 							<div class="timeline-content right animated fadeInUp" data-anim-queue="5"
 								data-anim-type="fadeInUp" style="opacity: 0;"><span>July, 2022</span> Token Listing -
-								MTK tokens will get listed on the pancakeswap exchange and Gate.io at the price of 1
-								MTK = 5 USD </div>
+								Plexus tokens will get listed on the pancakeswap exchange and Gate.io at the price of 1
+								Plexus = 5 ETH </div>
 						</div>
 						<div class="timeline-block">
 							<div class="timeline-planet-wrap">
@@ -709,7 +718,7 @@
 									</svg></div>
 							</div>
 							<div class="timeline-content left animated fadeInUp" data-anim-queue="5"
-								data-anim-type="fadeInUp" style="opacity: 0;"><span>August, 2022</span> TEST Token will
+								data-anim-type="fadeInUp" style="opacity: 0;"><span>August, 2022</span> Plexus Token will
 								be ready to collateralize a transfer.</div>
 						</div>
 						<div class="timeline-block">
@@ -769,7 +778,7 @@
 							</div>
 							<div class="timeline-content left animated fadeInUp" data-anim-queue="7"
 								data-anim-type="fadeInUp" style="opacity: 0;"><span>October, 2022</span> Stakig Live -
-								The Native token holders can stake MTK and earn rewards </div>
+								The Native token holders can stake PLX and earn rewards </div>
 						</div>
 						<div class="timeline-block">
 							<div class="timeline-planet-wrap">
@@ -791,8 +800,8 @@
 									</svg></div>
 							</div>
 							<div class="timeline-content right animated fadeInUp" data-anim-queue="8"
-								data-anim-type="fadeInUp" style="opacity: 0;"><span>November, 2022</span>MTK will also
-								be available for developers interested in deploying their own projects and using MTK
+								data-anim-type="fadeInUp" style="opacity: 0;"><span>November, 2022</span>Plexus will also
+								be available for developers interested in deploying their own projects and using PLX
 								for a wide variety of collateral use cases</div>
 						</div>
 					</div>
@@ -821,7 +830,7 @@
 			</div>
 			<div class="bottom-bar">
 				<div class="container">
-					<div class="row text-align-center">© Copyright 2022 - TEST Token. All Rights Reserved.</div>
+					<div class="row text-align-center">© Copyright 2022 - Plexus Token. All Rights Reserved.</div>
 				</div>
 			</div>
 		</div>
