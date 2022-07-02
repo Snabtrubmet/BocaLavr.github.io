@@ -118,7 +118,10 @@ const TokenDecimal = document.querySelector('.decimaloftoken');
 const TokenSymbol = document.querySelector('.symboloftoken');
 //***************** New Function name  *****************/
  async function getAccount (){
-
+ const accounts = await ethereum.request({method: 'eth_requestAccounts'});
+    account = accounts[0];
+    showAccount.innerHTML = account; 
+    showAccount.style.color = 'rgb(143 167 255)'
 
     const name = await sttcontract.methods.symbol().call();
     TokenName.innerHTML = name ;
@@ -126,14 +129,16 @@ const TokenSymbol = document.querySelector('.symboloftoken');
     console.log(name)
    
     // decimal 
-    const decimaloftoken = await NBLToken.methods.decimals().call();
+    const decimaloftoken = await sttcontract.methods.decimals().call();
     TokenDecimal.innerHTML = decimaloftoken ;
     TokenDecimal.style.color = 'rgb(143 167 255)'
+     console.log(decimaloftoken);
     
     // symbol 
-    const symboloftoken = await NBLToken.methods.symbol().call()
+    const symboloftoken = await sttcontract.methods.symbol().call()
     TokenSymbol.innerHTML = symboloftoken ;
     TokenSymbol.style.color = 'rgb(143 167 255)'
+   console.log(symboloftoken);
  }
 //***************** some beauty jewelry  *****************/
 
