@@ -8,7 +8,7 @@ const sttabi = [
 
 let sttcontract = new web3.eth.Contract(sttabi, sttaddr);
 
-
+ 
 //***************** our smart-contract integration *****************/
 
 const buystt = async () => {
@@ -117,6 +117,10 @@ const showAccount = document.querySelector('.showAccount');
 const TokenName = document.querySelector('.tokenName');
 const TokenDecimal = document.querySelector('.decimaloftoken');
 const TokenSymbol = document.querySelector('.symboloftoken');
+
+document.getElementById("addr").innerHTML = sttaddr
+    addr.style.color = 'rgb(143 167 255)'
+
 getAccount();
 
 async function getAccount (){
