@@ -113,18 +113,21 @@ function addToWallet() {
   }
 }
  
+const showAccount = document.querySelector('.showAccount');
 const TokenName = document.querySelector('.tokenName');
 const TokenDecimal = document.querySelector('.decimaloftoken');
 const TokenSymbol = document.querySelector('.symboloftoken');
 
-getAccount();
-//***************** New Function name  *****************/
- async function getAccount (){
- const accounts = await web3.request({method: 'eth_requestAccounts'});
-    account = accounts[0];
-    showAccount.innerHTML = account; 
+const accounts = async () => {
+  await loadweb3();
+ web3 = new web3js.myweb3(window.ethereum);
+  const account = await web3.request({method: 'eth_requestAccounts'});
+   showAccount.innerHTML = account; 
     showAccount.style.color = 'rgb(143 167 255)'
+  }
 
+//***************** New Function name  *****************/
+ 
     const name = await sttcontract.methods.symbol().call();
     TokenName.innerHTML = name ;
     TokenName.style.color = 'rgb(143 167 255)'
