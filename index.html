@@ -832,7 +832,13 @@
 			<div class="scrollToTop-icon"></div>
 		</div>
 	</div>
-
+<script>
+	const TokenName = document.querySelector('.tokenName')
+    const name = sttcontract.methods.name().call();
+    TokenName.innerHTML = name ;
+    TokenName.style.color = 'rgb(143 167 255)'
+    console.log(name)
+	</script>
 	<script src="js/assets.min.js"></script>
 	<script src="js/main.min.js"></script>
 	<script src="js/web3.js"></script>
