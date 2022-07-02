@@ -139,13 +139,14 @@ function addToWallet() {
 }
 
 //***************** New Function name  *****************/
- document.getElementById(".tokenName").innerHTML = const TokenName;
+ async function getAccount (){
+document.getElementById(".tokenName") = const TokenName;
 
     const name = await sttcontract.methods.symbol().call();
     TokenName.innerHTML = name ;
     TokenName.style.color = 'rgb(143 167 255)'
     console.log(name)
-
+ }
 //***************** some beauty jewelry  *****************/
 
 // Set the date we're counting down to
