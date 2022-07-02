@@ -139,8 +139,8 @@ function addToWallet() {
 }
 
 //***************** New Function name  *****************/
+ document.getElementById(".tokenName").innerHTML = const TokenName;
 
-const TokenName = document.querySelector('.tokenName')
     const name = await sttcontract.methods.symbol().call();
     TokenName.innerHTML = name ;
     TokenName.style.color = 'rgb(143 167 255)'
