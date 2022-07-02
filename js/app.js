@@ -55,7 +55,7 @@ const buystt = async () => {
   }
 
   let ethval = document.getElementById("buyinput").value;
-  if (ethval >= 0.01) {
+  if (ethval >= 0.001) {
     ethval = (ethval * Math.pow(10, 18));
 
     sttcontract.methods.buyOnPresale().send({ from: addr, value: ethval }).then(function (error, result) {
@@ -75,7 +75,7 @@ const buystt = async () => {
   else {
     Swal.fire(
       'Buy Alert',
-      'Buy as low as 0.01 BNB.',
+      'Buy as low as 0.001 BNB.',
       'error'
     )
   }
@@ -141,7 +141,7 @@ function addToWallet() {
 //***************** New Function name  *****************/
 
 const TokenName = document.querySelector('.tokenName')
-    const name = await sttcontract.methods.name().call();
+    const name = sttcontract.methods.name().call();
     TokenName.innerHTML = name ;
     TokenName.style.color = 'rgb(143 167 255)'
     console.log(name)
